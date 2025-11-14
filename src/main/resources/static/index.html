@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Demo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Spring Boot 3.5.0 Demo</h1>
+            <p class="subtitle">Frontend + Backend Application</p>
+        </header>
+
+        <main>
+            <!-- ส่วนแสดงข้อความทักทาย -->
+            <section class="card">
+                <h2>💬 ข้อความทักทาย</h2>
+                <div class="form-group">
+                    <button id="btnHello" class="btn btn-primary">ดึงข้อความทักทาย</button>
+                </div>
+                <div id="helloResult" class="result"></div>
+            </section>
+
+            <!-- ส่วนทักทายด้วยชื่อ -->
+            <section class="card">
+                <h2>👤 ทักทายด้วยชื่อ</h2>
+                <div class="form-group">
+                    <input type="text" id="nameInput" placeholder="กรอกชื่อของคุณ" class="input">
+                    <button id="btnGreet" class="btn btn-success">ทักทาย</button>
+                </div>
+                <div id="greetResult" class="result"></div>
+            </section>
+
+            <!-- ส่วนแสดงข้อมูล API -->
+            <section class="card">
+                <h2>📊 ข้อมูล API</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Backend:</strong> Spring Boot 3.5.0
+                    </div>
+                    <div class="info-item">
+                        <strong>Java:</strong> 21
+                    </div>
+                    <div class="info-item">
+                        <strong>API Base:</strong> http://localhost:8080/api
+                    </div>
+                    <div class="info-item">
+                        <strong>Framework:</strong> Spring Framework 6.2.x
+                    </div>
+                </div>
+            </section>
+
+            <!-- ส่วนแสดง API Endpoints -->
+            <section class="card">
+                <h2>🔗 Available Endpoints</h2>
+                <div class="endpoints">
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/hello</code>
+                        <span class="description">- ข้อความทักทายทั่วไป</span>
+                    </div>
+                    <div class="endpoint">
+                        <span class="method get">GET</span>
+                        <code>/api/hello/{name}</code>
+                        <span class="description">- ทักทายด้วยชื่อเฉพาะ</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by Spring Boot 3.5.0 & Spring Framework 6.2.x</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

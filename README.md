@@ -42,12 +42,13 @@ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 ## ความต้องการระบบ
 
-- Java 17 หรือสูงกว่า
+- Java 21 หรือสูงกว่า
 - Maven 3.6+ หรือสูงกว่า
 
 ## เทคโนโลยีที่ใช้
 
-- Spring Boot 3.2.0
+- Spring Boot 3.5.0
+- Spring Framework 6.2.x
 - Spring Web
 - Spring Boot DevTools
 - Maven
